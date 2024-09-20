@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.65;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    max-width: 72vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    color: red;
+    width: 151px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding: 0px 30px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    background-color: rgb(35, 35, 35);
+    height: 7px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 3px 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.english{
+    font-size: 16px;
+    padding: 5px 30px;
+    
+}
+
+.btn-red-sm {
+    transition: all 250ms ease-out;
+    line-height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 17px;
+    margin-left: 20px;
+}
+.btn-red-sm:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+.btn-red {
+    transition: all 250ms ease-out;
+    background-color: red;
+    line-height: 33px;
+    color: white;
+    padding: 8.5px 20px 11px 15px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid red;
+}
+.btn-red:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+.main input {
+    padding: 17px 165px 17px 15px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 1px solid rgb(255, 65, 65);
+    border-radius: 6px;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 568.5px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 80px;
+    right: 14px;
+    width: 480px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.vdo2 video {
+    position: absolute;
+    right: 50px;
+    top: 2px;
+    scale: 0.75;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 15px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 54px 54px 0px 54px;
+}
+
+.faqbox {
+    transition: all 250ms ease-out;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    font-size: 24px;
+    padding: 24px;
+    max-width: 72vw;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.faqbox svg:hover {
+    /* transition: ; */
+    transform: rotateZ(45deg);
+}
+
+.faqbox:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+
+.hey {
+    padding: 17px 165px 17px 15px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 1px solid rgb(255, 65, 65);
+    border-radius: 6px;
+    color: white;
+}
+footer {
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    padding: 14px;
+}
+
+footer .questions {
+    padding: 34px 0px;
+    margin-inline: -105px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-inline: -105px;
+}
+
+
+.footer a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.ready{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ready div{
+    padding: 40px 40px 20px 40px;
+}
+.net{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px 0px 150px 192px;
+
+}
+.lastbtn{
+    padding: 30px 190px;
+}
+
+@media screen and (max-width: 1500px) {
+    nav{
+        max-width: 90vw;
+    }
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+    }
+
+    .vdo2 video {
+        position: absolute;
+        top: -27px;
+        right: 31px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .first{
+
+        text-align: center;
+    }
+    .faq h2{
+        font-size: 32px;
+    }
+    footer{
+        max-width: 85vw;
+    }
+    .footer-item{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
